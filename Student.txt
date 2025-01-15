@@ -5,6 +5,6 @@ Student number: 707802
 Student class: IT-B
 
 GitHub Repository:
-https://github.com/Bercinyy/WebMarkup_Retake.git
+https://github.com/Bercinyy/WebMarkup_Retake
 
-GitHub Pages URL: https://bercinyy.github.io/WebMarkup_Retake/
+GitHub Pages URL: https://bercinyy.github.io/WebMarkup_Retake
