@@ -47,7 +47,7 @@ background-attachment: fixed;
 .right-images img {
     width: auto;
 }
-
+/*cookies*/
 .cookies-message {
     position: fixed;
     text-transform: uppercase;
@@ -85,7 +85,7 @@ p {
     letter-spacing: 1px;
     word-spacing: 2px;
 }
-
+/*banners*/
 .top-banner {
     position: relative;
     width: 100%;
@@ -363,7 +363,7 @@ header {
     width: 100%;
     padding: 0 20px;
 }
-
+/*navigation*/
 nav {
     display: flex;
     justify-content: center;
@@ -468,7 +468,7 @@ figure img {
     background-color: #FFD700;
     transform: translateY(-3px);
 }
-
+/*footer*/
 footer {
     background-color: rgb(255, 255, 255);
     color: #5A5157;
@@ -476,7 +476,7 @@ footer {
     padding: 20px 10px;
     margin-top: auto;
 }
-
+/*table*/
 table {
     width: 100%;
     border-collapse: collapse;
