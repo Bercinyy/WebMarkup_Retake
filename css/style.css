@@ -47,6 +47,7 @@ background-attachment: fixed;
 .right-images img {
     width: auto;
 }
+
 /*cookies*/
 .cookies-message {
     position: fixed;
@@ -85,6 +86,7 @@ p {
     letter-spacing: 1px;
     word-spacing: 2px;
 }
+
 /*banners*/
 .top-banner {
     position: relative;
