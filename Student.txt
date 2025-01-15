@@ -7,4 +7,4 @@ Student class: IT-B
 GitHub Repository:
 https://github.com/Bercinyy/WebMarkup_Retake.git
 
-GitHub Pages URL: https://github.com/Bercinyy
+GitHub Pages URL: https://bercinyy.github.io/WebMarkup_Retake/
