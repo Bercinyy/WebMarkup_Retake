@@ -48,9 +48,9 @@ background-attachment: fixed;
    
 }
 
-
 .cookies-message {
     position: fixed;
+    text-transform: uppercase;
     bottom: 0;
     width: 100%;
     background-color: #000;
@@ -60,10 +60,6 @@ background-attachment: fixed;
     z-index: 9999;
 }
 
-
-html {
-    scroll-behavior: smooth;
-}
 
 h1, .thank-you-section h1 {
     font-size: 2rem;
@@ -178,6 +174,60 @@ p, .thank-you-section p {
     display: block;
 }
 
+/* Aside section styles */
+aside {
+    background-color: #f8f8f8; /* Light grey background to differentiate */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+aside h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+aside ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+aside ul li {
+    margin: 10px 0;
+}
+
+aside ul li a {
+    text-decoration: none;
+    color: #1c5792; 
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+aside ul li a:hover {
+    color: #005bb5; 
+    text-decoration: underline; 
+}
+
+
+@media screen and (max-width: 768px) {
+    aside {
+        padding: 15px;
+        margin-top: 20px;
+    }
+
+    aside h2 {
+        font-size: 1.25rem;
+    }
+
+    aside ul li a {
+        font-size: 0.9rem;
+    }
+}
+/* Contact section */
 .contact-section {
     max-width: 600px;
     margin: 0 auto;
@@ -188,10 +238,19 @@ p, .thank-you-section p {
     color: #5A5157;
 }
 
-.contact-section h1 {
+.contact-section h1::first-letter {
     text-align: center;
     font-size: 32px;
     margin-bottom: 20px;
+}
+.contact-section > h1 {
+    font-size: 36px;
+    color: #F8E21A;
+}
+.contact-section img {
+    float: left;  
+    margin-right: 20px; 
+    max-width: 200px;  
 }
 
 .contact-form {
@@ -215,6 +274,14 @@ p, .thank-you-section p {
     color: #5A5157;
 }
 
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+    outline: 2px solid #F8E21A;
+    border-color: #F8E21A;
+    background-color: #fffceb;
+}
+
 .contact-form input,
 .contact-form select {
     background-color: white;
@@ -225,7 +292,9 @@ p, .thank-you-section p {
     resize: vertical;
 }
 
-.contact-form button {
+
+.contact-form button,
+.contact-form input[type="submit"] {
     padding: 12px;
     background-color: #F8E21A;
     color: #5A5157;
@@ -236,10 +305,39 @@ p, .thank-you-section p {
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.contact-form button:hover {
+.contact-form button:hover,
+.contact-form input[type="submit"]:hover {
     background-color: rgb(173, 122, 45);
     transform: translateY(-3px);
 }
+
+.contact-form button:active,
+.contact-form input[type="submit"]:active {
+    transform: translateY(2px);
+    background-color: #c2954f;
+}
+
+
+fieldset {
+    border: 2px solid #ddd;  
+    border-radius: 8px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+legend {
+    font-size: 18px;
+    font-weight: bold;
+    color: #5A5157;
+    padding: 0;
+    margin-bottom: 15px;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    width: auto;
+}
+
 
 header {
     margin-top: 0;
@@ -364,13 +462,69 @@ footer {
     margin-top: auto;
 }
 
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
 table tr:nth-child(even) {
-    background-color: #CFF;
+    background-color: rgb(255, 255, 255); 
 }
 
 table tr:nth-child(odd) {
-    background-color: #FFF;
+    background-color: #FFF;  
 }
+
+table td a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+table td a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    table, table thead, table tbody, table th, table td, table tr {
+        display: block;
+    }
+
+    table tr {
+        margin-bottom: 10px;
+    }
+
+    table th {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    table td {
+        border: none;
+        position: relative;
+        padding-left: 50%;
+    }
+
+    table td:before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        font-weight: bold;
+    }
+}
+
 
 @media (max-width: 768px) {
     .thank-you-section {
